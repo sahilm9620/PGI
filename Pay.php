@@ -8,7 +8,7 @@ $purpose='Donation';
 
 
 include 'instamojo/Instamojo.php';
-$api = new Instamojo\Instamojo('test_3743a7a31d4c8d710f488ba8e39', 'test_2df6effdc4b9b2e6dd53dddd5a1', 'https://test.instamojo.com/api/1.1/');
+$api = new Instamojo\Instamojo('test_6620ec1c9ff2cd530b90d1ec36d', 'test_69417cae46934ed9d74d90f1d43', 'https://test.instamojo.com/api/1.1/');
 
 try {
     $response = $api->paymentRequestCreate(array(
@@ -20,7 +20,7 @@ try {
         "phone"=>$Phone,
         "send_sms" => true,
         "allow_repeated_payments" =>false,
-        "redirect_url" => "https://payment-gateway-integration.000webhostapp.com/redirect.php"
+        "redirect_url" => "https://payementgatewayintegration.000webhostapp.com/thankyou.php"
         ));
     //print_r($response);
     $pay_url=$response['longurl'];
